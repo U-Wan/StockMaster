@@ -69,8 +69,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation(libs.retrofit)
-    implementation(libs.okhttp)
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.converter.moshi)
+    implementation(libs.okhttp.core)
+    implementation(libs.okhttp.logging.interceptor)
     implementation(libs.room)
     implementation(libs.opencsv)
     implementation(libs.paging)
